@@ -1,0 +1,622 @@
+/* Reiniciamos los estilos básicos del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdf5;
+    color: #3d3d3d;
+}
+
+
+/* =========================
+    PORTADA
+========================= */
+
+.inicio {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff9c4,
+        #fffde7,
+        #ffffff
+    );
+}
+
+
+/* Caja principal */
+
+.contenido-inicio {
+    max-width: 700px;
+}
+
+
+/* Fecha */
+
+.fecha {
+    display: inline-block;
+
+    background-color: #ffffff;
+    color: #b8860b;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    margin-bottom: 25px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Título */
+
+.contenido-inicio h1 {
+    font-size: 4rem;
+
+    color: #d4a000;
+
+    margin-bottom: 20px;
+}
+
+
+/* Mensaje */
+
+.mensaje-inicio {
+    font-size: 1.2rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* Botón */
+
+#btnSorpresa {
+    border: none;
+
+    background-color: #f4c430;
+    color: #ffffff;
+
+    padding: 16px 30px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(212, 160, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+
+/* Efecto cuando pasamos el mouse */
+
+#btnSorpresa:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    background-color: #d4a000;
+
+    box-shadow: 0 12px 25px rgba(212, 160, 0, 0.35);
+}
+
+
+/* =========================
+    CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .contenido-inicio h1 {
+        font-size: 2.7rem;
+    }
+
+    .mensaje-inicio {
+        font-size: 1rem;
+    }
+
+    #btnSorpresa {
+        padding: 14px 24px;
+    }
+
+}
+
+/* =========================
+    CARTA
+========================= */
+
+.carta {
+    padding: 100px 20px;
+    background-color: #fffdf5;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.contenido-carta {
+    max-width: 750px;
+
+    background-color: white;
+
+    padding: 50px 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+
+    border: 2px solid #ffe082;
+}
+
+.contenido-carta h2 {
+    color: #d4a000;
+
+    font-size: 2.3rem;
+
+    margin-bottom: 25px;
+}
+
+.contenido-carta p {
+    font-size: 1.1rem;
+
+    line-height: 1.9;
+
+    color: #555;
+}
+
+
+/* =========================
+    NUESTROS MOMENTOS
+========================= */
+
+.momentos {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #fffde7,
+        #fff9c4
+    );
+}
+
+.momentos h2 {
+    font-size: 2.5rem;
+
+    color: #d4a000;
+
+    margin-bottom: 45px;
+}
+
+
+/* Galería */
+
+.galeria {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Tarjeta de cada foto */
+
+.foto {
+    background-color: white;
+
+    padding: 10px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.foto:hover {
+    transform: translateY(-8px);
+}
+
+
+/* Imágenes */
+
+.foto img {
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    display: block;
+}
+
+
+/* =========================
+    MENSAJE FINAL
+========================= */
+
+.final {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background-color: #fffdf5;
+}
+
+.final h2 {
+    font-size: 2.5rem;
+
+    color: #d4a000;
+
+    margin-bottom: 20px;
+}
+
+.final p {
+    font-size: 1.3rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+    CELULARES - RESTO DE PÁGINA
+========================= */
+
+@media (max-width: 600px) {
+
+    .carta {
+        padding: 70px 15px;
+    }
+
+    .contenido-carta {
+        padding: 35px 20px;
+    }
+
+    .contenido-carta h2 {
+        font-size: 1.8rem;
+    }
+
+    .contenido-carta p {
+        font-size: 1rem;
+    }
+
+    .momentos {
+        padding: 70px 15px;
+    }
+
+    .momentos h2 {
+        font-size: 2rem;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .foto img {
+        height: 320px;
+    }
+
+    .final {
+        padding: 70px 20px;
+    }
+
+    .final h2 {
+        font-size: 2rem;
+    }
+}
+
+/* =========================
+    FLORES ANIMADAS
+========================= */
+
+.flor-animada {
+    position: fixed;
+
+    top: -60px;
+
+    z-index: 9999;
+
+    pointer-events: none;
+
+    animation-name: caerFlor;
+    animation-timing-function: linear;
+}
+
+
+@keyframes caerFlor {
+
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+/* =========================
+    SORPRESA OCULTA
+========================= */
+
+.sorpresa {
+    display: none;
+}
+
+
+/* Cuando JavaScript active la sorpresa */
+
+.sorpresa.mostrar {
+    animation: aparecer 1.2s ease;
+}
+
+.carta.sorpresa.mostrar {
+    display: flex;
+}
+
+.momentos.sorpresa.mostrar,
+.final.sorpresa.mostrar {
+    display: block;
+}
+
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.inicio {
+    position: relative;
+    overflow: hidden;
+}
+
+.decoracion-flor {
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.25;
+
+    animation: flotar 4s ease-in-out infinite;
+}
+
+.flor-1 {
+    top: 15%;
+    left: 8%;
+}
+
+.flor-2 {
+    top: 20%;
+    right: 10%;
+    font-size: 3rem;
+    animation-delay: 1s;
+}
+
+.flor-3 {
+    bottom: 12%;
+    left: 15%;
+    font-size: 5rem;
+    animation-delay: 2s;
+}
+
+.flor-4 {
+    bottom: 15%;
+    right: 15%;
+    font-size: 4rem;
+    animation-delay: 0.5s;
+}
+
+@keyframes flotar {
+
+    0%, 100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
+
+/* Ajustamos decoración para celular */
+
+@media (max-width: 600px) {
+
+    .decoracion-flor {
+        font-size: 2.5rem;
+    }
+
+    .flor-3 {
+        font-size: 3rem;
+    }
+
+}
+
+/* =========================
+   VISOR DE FOTOS
+========================= */
+
+.visor {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10000;
+
+    padding: 30px;
+}
+
+.visor.activo {
+    display: flex;
+}
+
+.visor img {
+    max-width: 90%;
+    max-height: 85vh;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+    animation: ampliarFoto 0.4s ease;
+}
+
+.cerrar {
+    position: absolute;
+
+    top: 20px;
+    right: 35px;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+.foto img {
+    cursor: pointer;
+}
+
+
+@keyframes ampliarFoto {
+
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+/* =========================
+   SORPRESA FINAL
+========================= */
+
+#btnFinal {
+    margin-top: 30px;
+
+    border: none;
+
+    background-color: #f4c430;
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(212, 160, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+#btnFinal:hover {
+    background-color: #d4a000;
+
+    transform: translateY(-3px);
+}
+
+
+.mensaje-final {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    max-height: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    transition: 
+        max-height 1s ease,
+        opacity 1s ease,
+        margin-top 1s ease;
+}
+
+
+.mensaje-final.mostrar-final {
+    max-height: 300px;
+
+    opacity: 1;
+
+    margin-top: 35px;
+}
+
+
+.mensaje-final p {
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+.mensaje-final h3 {
+    color: #d4a000;
+
+    font-size: 1.5rem;
+}
